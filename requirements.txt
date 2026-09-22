@@ -1,0 +1,4 @@
+openai>=1.40
+langchain-typesafe>=0.1
+langsmith>=0.1.100
+python-dotenv>=1.0
