@@ -5,17 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "jev-compare"
 version = "0.1.0"
-description = "Jev (typed classifier) vs LLM on the same loan-eligibility decision."
+description = "Jev (TypeSafe System One) vs LLMs on the same labelled decisions: claims triage and loan eligibility."
 requires-python = ">=3.10"
 dependencies = [
-    "openai>=1.40",
+    "typesafe-sdk>=0.7",      # Jev (TypeSafe System One), direct or via OpenRouter
+    "httpx2>=2.13",           # HTTP client the SDK uses; also used for OpenRouter chat calls
     "langsmith>=0.1.100",
     "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]
-# Jev's SDK is distributed by TypeSafe AI, not PyPI; install it from their instructions.
-jev = ["langchain-typesafe>=0.1"]
 dev = ["pytest>=8"]
 
 [project.scripts]

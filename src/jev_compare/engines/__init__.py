@@ -1,1 +1,1 @@
-"""Decision engines. Each exposes `evaluate(text) -> EngineResult`."""
+"""Decision engines. Each exposes `name` and `async evaluate(item) -> EngineResult`."""

@@ -1,0 +1,1081 @@
+[
+ {
+  "id": "L-001",
+  "narrative": "I scraped my passenger mirror on the garage door frame. The mirror housing is cracked but it still works.",
+  "claimed_amount": 650,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-002",
+  "narrative": "Low speed bump while parking: I tapped a concrete bollard and cracked the front bumper cover. Car drives fine.",
+  "claimed_amount": 1400,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-003",
+  "narrative": "Someone keyed the whole side of my car overnight in my driveway. Paint damage only.",
+  "claimed_amount": 1800,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-004",
+  "narrative": "A rock kicked up by a truck cracked my windshield on the interstate. It needs replacing, but I can still see fine.",
+  "claimed_amount": 900,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-005",
+  "narrative": "A small leak under the kitchen sink damaged the bottom of the cabinet. The plumber already fixed the pipe.",
+  "claimed_amount": 1900,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-006",
+  "narrative": "My side window was smashed in a parking lot. Nothing was taken, just the glass needs replacing.",
+  "claimed_amount": 700,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-007",
+  "narrative": "I rolled back into a pole in a parking lot. The rear bumper has a crack and some scuffs.",
+  "claimed_amount": 1300,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-008",
+  "narrative": "A candle tipped over and scorched a small patch of the living room carpet. We put it out right away and no one was hurt.",
+  "claimed_amount": 1500,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "fast_track",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-009",
+  "narrative": "Minor scuff on my rear bumper from a parking garage pillar.",
+  "claimed_amount": 300,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "below_deductible",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-010",
+  "narrative": "Small chip in the windshield from gravel on the road.",
+  "claimed_amount": 150,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "below_deductible",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-011",
+  "narrative": "The toilet overflowed and soaked the bathroom mat and a bit of the baseboard.",
+  "claimed_amount": 400,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "below_deductible",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-012",
+  "narrative": "The toaster caught fire. It burned the toaster and slightly scorched the backsplash tile.",
+  "claimed_amount": 600,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "below_deductible",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-013",
+  "narrative": "Somebody snapped off my car antenna overnight.",
+  "claimed_amount": 120,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "below_deductible",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-014",
+  "narrative": "A driver merged into my lane and sideswiped me. The driver's side doors are dented and the mirror is gone. No one was hurt.",
+  "claimed_amount": 4200,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-015",
+  "narrative": "A pipe burst in the laundry room and flooded the floor. Drywall and flooring in that room need replacing.",
+  "claimed_amount": 6500,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-016",
+  "narrative": "My catalytic converter was stolen from my car overnight in the apartment parking lot.",
+  "claimed_amount": 2800,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-017",
+  "narrative": "I hit a deer on a rural road. The front end and radiator are damaged and the car is not drivable. I'm fine.",
+  "claimed_amount": 5200,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-018",
+  "narrative": "A grease fire on the stove damaged the range hood and upper cabinets, and there is a smoke smell throughout the kitchen.",
+  "claimed_amount": 8000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-019",
+  "narrative": "The water heater leaked in the garage and soaked the stored boxes and the lower drywall.",
+  "claimed_amount": 3100,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-020",
+  "narrative": "My car was broken into and my laptop and backpack were stolen. The rear window was smashed.",
+  "claimed_amount": 3200,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-021",
+  "narrative": "I slid on ice into a guardrail. The hood, grille and one headlight are damaged.",
+  "claimed_amount": 3500,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-022",
+  "narrative": "The roof leaked during heavy rain, stained the bedroom ceiling and ruined the carpet.",
+  "claimed_amount": 4000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "standard_adjuster",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-023",
+  "narrative": "Head-on collision on the highway. My car is totaled and I broke my arm. I spent the night in hospital.",
+  "claimed_amount": 30000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "auto_collision",
+   "injury": true,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-024",
+  "narrative": "A kitchen fire spread to the dining room. Both rooms are gutted and we can't use the downstairs.",
+  "claimed_amount": 60000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-025",
+  "narrative": "A delivery driver slipped on our wet porch stairs and hurt his back. His employer's insurer has contacted us.",
+  "claimed_amount": 20000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "liability",
+   "injury": true,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-026",
+  "narrative": "Our tree fell onto the neighbor's garage during a storm and crushed their car. They want us to pay for it.",
+  "claimed_amount": 18000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "liability",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-027",
+  "narrative": "A pipe burst while we were on vacation. The whole ground floor flooded and the floors and walls are destroyed.",
+  "claimed_amount": 45000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-028",
+  "narrative": "I was T-boned at an intersection. The airbags deployed and my daughter has a concussion.",
+  "claimed_amount": 22000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "auto_collision",
+   "injury": true,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-029",
+  "narrative": "Our dog bit a child at the park and she needed stitches. The parents are asking us to cover the medical bills.",
+  "claimed_amount": 5000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "liability",
+   "injury": true,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-030",
+  "narrative": "My car went off the road in the rain and rolled over. It is a total loss, but I walked away without a scratch.",
+  "claimed_amount": 26000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-031",
+  "narrative": "Lightning started a fire in the attic. The roof and second floor are destroyed and the family has had to move out.",
+  "claimed_amount": 150000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "senior_adjuster",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-032",
+  "narrative": "The basement flooded after heavy rain and ruined the furnace.",
+  "claimed_amount": 9000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-033",
+  "narrative": "Someone rear-ended my car at a stop sign and crushed the bumper.",
+  "claimed_amount": 2500,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-034",
+  "narrative": "My car was stolen from the driveway overnight.",
+  "claimed_amount": 15000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-035",
+  "narrative": "A kitchen fire damaged the stove and the cabinets above it.",
+  "claimed_amount": 7000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-036",
+  "narrative": "My windshield was cracked by vandals while parked on the street.",
+  "claimed_amount": 800,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-037",
+  "narrative": "The washing machine hose burst and flooded the laundry room.",
+  "claimed_amount": 3000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "coverage_review",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": false
+  }
+ },
+ {
+  "id": "L-038",
+  "narrative": "My car was stolen Friday. Or maybe Saturday, I'm not sure. I need cash today, you don't need to inspect anything.",
+  "claimed_amount": 15000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2026-09-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "auto_comprehensive",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-039",
+  "narrative": "A fire in the garage destroyed my tools and a motorcycle. Please pay right away, I don't want an adjuster coming out.",
+  "claimed_amount": 25000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2026-09-05",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-040",
+  "narrative": "My car got hit in a parking lot. The dent was already there a bit before, but this made it worse. Can you just wire me the money?",
+  "claimed_amount": 2400,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-041",
+  "narrative": "A fire started somewhere in the house, I can't recall where exactly. I was home, actually no, I was away that weekend. Everything expensive was destroyed and I have no receipts.",
+  "claimed_amount": 32000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "property_fire",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-042",
+  "narrative": "Water damage in the basement. I noticed it sometime in the past few months, not sure when. It was an old stain already but now it's worse. I need payment immediately.",
+  "claimed_amount": 12000,
+  "incident_date": "2026-07-10",
+  "reported_date": "2026-09-15",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "property_water",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-043",
+  "narrative": "I was rear-ended and the other car sped off. I didn't get the plate and don't remember the street. My back hurts and I need the settlement in cash this week.",
+  "claimed_amount": 18000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "auto_collision",
+   "injury": true,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-044",
+  "narrative": "Rear bumper damage from a collision. Actually it happened two months ago. It had some scratches before too. Please skip the inspection, just send cash.",
+  "claimed_amount": 4800,
+  "incident_date": "2026-07-10",
+  "reported_date": "2026-09-15",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "siu_review",
+   "claim_type": "auto_collision",
+   "injury": false,
+   "fraud": true
+  }
+ },
+ {
+  "id": "L-045",
+  "narrative": "Something happened with my stuff last week, not really sure how to describe it. Can someone call me back?",
+  "claimed_amount": 1200,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "not_enough_information"
+  }
+ },
+ {
+  "id": "L-046",
+  "narrative": "My phone fell in the lake while I was fishing.",
+  "claimed_amount": 900,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "personal_property"
+  }
+ },
+ {
+  "id": "L-047",
+  "narrative": "I want to file a claim. Please call me.",
+  "claimed_amount": 0,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2022-03-01",
+   "deductible": 500,
+   "coverages": [
+    "collision",
+    "comprehensive (theft, vandalism, glass)"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "not_enough_information"
+  }
+ },
+ {
+  "id": "L-048",
+  "narrative": "My identity was stolen and someone opened credit cards in my name.",
+  "claimed_amount": 5000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "identity_theft"
+  }
+ },
+ {
+  "id": "L-049",
+  "narrative": "The contractor did a bad job on our renovation and I want the insurance to fix it.",
+  "claimed_amount": 14000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "workmanship_dispute"
+  }
+ },
+ {
+  "id": "L-050",
+  "narrative": "My tenant moved out and left the apartment a mess.",
+  "claimed_amount": 3000,
+  "incident_date": "2026-09-15",
+  "reported_date": "2026-09-16",
+  "policy": {
+   "start_date": "2019-05-01",
+   "deductible": 1000,
+   "coverages": [
+    "fire",
+    "water damage",
+    "personal liability"
+   ]
+  },
+  "labels": {
+   "route": "human_triage",
+   "claim_type": "other",
+   "injury": false,
+   "fraud": false,
+   "other_subtype": "tenant_damage"
+  }
+ }
+]

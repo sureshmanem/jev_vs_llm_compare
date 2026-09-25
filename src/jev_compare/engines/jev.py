@@ -1,103 +1,84 @@
-"""Jev engine: TypeSafe "System One" answers typed questions, Python applies policy.
+"""Jev engine: TypeSafe's System One answers the task's typed questions in one
+pass, then the task's deterministic policy makes the decision.
 
-We ask Jev a handful of calibrated yes/no (noul) questions about the SAME applicant
-text, then feed the answers through policy.decide() — the identical rules the LLM is
-told to follow. The difference: here the decision is deterministic Python over typed,
-calibrated probabilities, not parsed prose.
-
-Docs: https://www.langchain.com/blog/building-a-harness-with-jev
-Uses the documented `Noul` primitive. TypeSafe also offers a `Score` type
-(low/medium/high) which would map credit_risk more directly; once its exact
-constructor/accessor is confirmed against the langchain-typesafe docs, credit_risk
-can be swapped to a single Score question. For now we derive it from two nouls so the
-demo runs against the documented API.
-
-Traced in LangSmith via @traceable.
+Backend selection is copied from jev_poc (claims_triage/pipeline.py): a direct
+TYPESAFE_API_KEY wins, then OPENROUTER_API_KEY (OpenRouter serves the TypeSafe
+API shape at ~typesafe/jev-latest), otherwise an offline simulator.
 """
 from __future__ import annotations
 
 import time
+from typing import Any
 
 from langsmith import traceable
+from typesafe_sdk import AsyncTypeSafeClient, SystemOneResponse
 
-from jev_compare.config import EngineResult, require_env
-from jev_compare.policy import Factors, decide
+from jev_compare import simulator
+from jev_compare.config import EngineResult, env
+from jev_compare.tasks import Task
 
-# Probability at/above which a noul is treated as "true".
-THRESHOLD = 0.5
-
-
-def _classifier():
-    # Imported lazily so the module loads even before the dep is installed.
-    try:
-        from langchain_typesafe import TypeSafeClassifier  # noqa: WPS433
-    except ImportError as exc:
-        raise RuntimeError(
-            "langchain-typesafe is not installed. Jev is served by TypeSafe AI "
-            "(not OpenRouter); install their SDK to run this engine."
-        ) from exc
-    require_env("TYPESAFE_API_KEY")
-    return TypeSafeClassifier()  # reads TYPESAFE_API_KEY from env
+OPENROUTER_BASE_URL = "https://openrouter.ai/api"
+OPENROUTER_MODEL = "~typesafe/jev-latest"
+PRICE_PER_MTOK = 0.042  # USD per million input tokens; output is free
 
 
-def _questions():
-    from langchain_typesafe import Noul  # noqa: WPS433
-    return {
-        "income_sufficient": Noul(
-            instructions="The applicant's stated annual income is at least 50,000."
-        ),
-        "employment_stable": Noul(
-            instructions="The applicant has held steady employment for 2 or more years."
-        ),
-        "credit_high": Noul(
-            instructions=(
-                "The applicant is a HIGH credit risk: recent defaults, collections, "
-                "missed payments, or heavily maxed-out credit."
+def backend() -> str:
+    if env("TYPESAFE_API_KEY"):
+        return "typesafe"
+    if env("OPENROUTER_API_KEY"):
+        return "openrouter"
+    return "offline"
+
+
+def model_id() -> str:
+    """TYPESAFE_DEFAULT_MODEL pins a version; otherwise the backend's latest alias."""
+    default = OPENROUTER_MODEL if backend() == "openrouter" else "jev-latest"
+    return env("TYPESAFE_DEFAULT_MODEL") or default
+
+
+def make_client() -> AsyncTypeSafeClient:
+    match backend():
+        case "typesafe":
+            return AsyncTypeSafeClient(model=model_id())
+        case "openrouter":
+            return AsyncTypeSafeClient(
+                api_key=env("OPENROUTER_API_KEY"), base_url=OPENROUTER_BASE_URL, model=model_id()
             )
-        ),
-        "credit_low": Noul(
-            instructions=(
-                "The applicant is a LOW credit risk: clean history, no defaults, "
-                "debts well managed."
+        case _:
+            return AsyncTypeSafeClient(
+                api_key="sk-offline-simulator", model=model_id(), transport=simulator.transport()
             )
-        ),
-    }
 
 
-def _credit_risk(p_high: float, p_low: float) -> str:
-    if p_high >= THRESHOLD:
-        return "high"
-    if p_low >= THRESHOLD:
-        return "low"
-    return "medium"
+def call_cost(response: SystemOneResponse) -> float:
+    """Billed cost when the backend reports it (OpenRouter), else estimated."""
+    billed = (response.raw_http_response.json().get("usage") or {}).get("cost")
+    if billed is not None:
+        return float(billed)
+    return (response.usage.input_tokens or 0) / 1e6 * PRICE_PER_MTOK
 
 
-@traceable(run_type="chain", name="jev_engine")
-def evaluate(text: str) -> EngineResult:
-    """Run Jev's typed questions on one applicant, then apply the policy."""
-    classifier = _classifier()
-    start = time.perf_counter()
-    response = classifier.invoke({"state": text, "questions": _questions()})
-    latency_ms = (time.perf_counter() - start) * 1000
+class JevEngine:
+    kind = "jev"
 
-    p = {name: response.nouls[name].noul for name in
-         ("income_sufficient", "employment_stable", "credit_high", "credit_low")}
+    def __init__(self, task: Task, client: AsyncTypeSafeClient):
+        self.task = task
+        self.client = client
+        self.name = "jev"
+        self.model = model_id()
 
-    factors = Factors(
-        income_sufficient=p["income_sufficient"] >= THRESHOLD,
-        employment_stable=p["employment_stable"] >= THRESHOLD,
-        credit_risk=_credit_risk(p["credit_high"], p["credit_low"]),
-    )
-    decision = decide(factors)
-    reason = (
-        f"income_sufficient={factors.income_sufficient} (p={p['income_sufficient']:.2f}), "
-        f"employment_stable={factors.employment_stable} (p={p['employment_stable']:.2f}), "
-        f"credit_risk={factors.credit_risk} "
-        f"(p_high={p['credit_high']:.2f}, p_low={p['credit_low']:.2f})"
-    )
-    return EngineResult(
-        decision=decision,
-        reason=reason,
-        latency_ms=latency_ms,
-        detail={"probabilities": p, "factors": factors.__dict__},
-    )
+    @traceable(run_type="chain", name="jev_engine")
+    async def evaluate(self, item: dict[str, Any]) -> EngineResult:
+        start = time.perf_counter()
+        response = await self.client.system_one(
+            self.task.state(item), self.task.questions(), response_model=self.task.response_model
+        )
+        latency_ms = (time.perf_counter() - start) * 1000
+        decision, detail = self.task.decide(item, response)
+        return EngineResult(
+            decision=decision,
+            reason="; ".join(detail.get("reasons", [])) or str(detail.get("factors", "")),
+            latency_ms=latency_ms,
+            cost=call_cost(response),
+            detail={**detail, "model": response.model, "answers": response.raw_http_response.json()["answers"]},
+        )

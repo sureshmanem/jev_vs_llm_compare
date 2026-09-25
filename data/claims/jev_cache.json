@@ -1,0 +1,4196 @@
+{
+ "L-001": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "other": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 0.93,
+     "auto_comprehensive": 0.07
+    },
+    "confidence": 0.91
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.04,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.96,
+     "1": 0.04,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.96
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.8
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.1
+   }
+  },
+  "usage": {
+   "input_tokens": 870,
+   "output_tokens": 219,
+   "cost": 3.654e-05
+  },
+  "id": "gen-dec-1790293491-cbM7q85VQSJRXb9H31F3",
+  "provider": "TypeSafe"
+ },
+ "L-002": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "liability": 0,
+     "property_fire": 0,
+     "property_water": 0,
+     "other": 0,
+     "auto_comprehensive": 0,
+     "auto_collision": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 1
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 872,
+   "output_tokens": 219,
+   "cost": 3.6624e-05
+  },
+  "id": "gen-dec-1790293491-cPRCRYp9tvf4UhVhjjxS",
+  "provider": "TypeSafe"
+ },
+ "L-003": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "auto_comprehensive": 1,
+     "property_water": 0,
+     "other": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.02,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.98,
+     "1": 0.02,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.98
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 0.99
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 866,
+   "output_tokens": 222,
+   "cost": 3.6372e-05
+  },
+  "id": "gen-dec-1790293491-0EkoZ4E2QluOMoBeeAXF",
+  "provider": "TypeSafe"
+ },
+ "L-004": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "auto_comprehensive": 1,
+     "liability": 0,
+     "other": 0,
+     "property_fire": 0,
+     "property_water": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.46,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.54,
+     "1": 0.46,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.54
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 874,
+   "output_tokens": 222,
+   "cost": 3.6708e-05
+  },
+  "id": "gen-dec-1790293491-GBCAPzIMrmRODCg6VeXY",
+  "provider": "TypeSafe"
+ },
+ "L-005": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "other": 0,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "property_water": 1,
+     "liability": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.87,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.13,
+     "1": 0.87,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.87
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.92
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.18
+   }
+  },
+  "usage": {
+   "input_tokens": 863,
+   "output_tokens": 219,
+   "cost": 3.6246e-05
+  },
+  "id": "gen-dec-1790293491-KMr2wKDuHDyIQZvpMhzn",
+  "provider": "TypeSafe"
+ },
+ "L-006": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "other": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_comprehensive": 1,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.92,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.08,
+     "1": 0.92,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.92
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 869,
+   "output_tokens": 222,
+   "cost": 3.6498e-05
+  },
+  "id": "gen-dec-1790293491-lMRdH6aVtRboU4EJHrB6",
+  "provider": "TypeSafe"
+ },
+ "L-007": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "property_fire": 0,
+     "auto_collision": 1,
+     "property_water": 0,
+     "liability": 0,
+     "other": 0,
+     "auto_comprehensive": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.16,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.84,
+     "1": 0.16,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.84
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.12
+   }
+  },
+  "usage": {
+   "input_tokens": 871,
+   "output_tokens": 219,
+   "cost": 3.6582e-05
+  },
+  "id": "gen-dec-1790293491-RJiK1i66SpraUenRIJTY",
+  "provider": "TypeSafe"
+ },
+ "L-008": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 0,
+     "property_fire": 1,
+     "other": 0,
+     "auto_comprehensive": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.09,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.91,
+     "1": 0.09,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.91
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 871,
+   "output_tokens": 219,
+   "cost": 3.6582e-05
+  },
+  "id": "gen-dec-1790293491-TyBPHfMb6VjhlHOlH4Ir",
+  "provider": "TypeSafe"
+ },
+ "L-009": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "property_fire": 0,
+     "auto_comprehensive": 0,
+     "other": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 1
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.09
+   }
+  },
+  "usage": {
+   "input_tokens": 862,
+   "output_tokens": 219,
+   "cost": 3.6204e-05
+  },
+  "id": "gen-dec-1790293491-qmd4QBRiuA7qyyKZuLwF",
+  "provider": "TypeSafe"
+ },
+ "L-010": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "auto_comprehensive": 1,
+     "liability": 0,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "property_water": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.05,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.96,
+     "1": 0.04,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.95
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.09
+   }
+  },
+  "usage": {
+   "input_tokens": 860,
+   "output_tokens": 222,
+   "cost": 3.612e-05
+  },
+  "id": "gen-dec-1790293491-IrebQiFx9M8RvnDn12bK",
+  "provider": "TypeSafe"
+ },
+ "L-011": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "other": 0,
+     "property_water": 1,
+     "liability": 0,
+     "property_fire": 0,
+     "auto_comprehensive": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.38,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.62,
+     "1": 0.38,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.62
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.94
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 861,
+   "output_tokens": 219,
+   "cost": 3.6162e-05
+  },
+  "id": "gen-dec-1790293491-P3OxFFENCCxmgnNqymK2",
+  "provider": "TypeSafe"
+ },
+ "L-012": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_water": 0,
+     "property_fire": 1,
+     "liability": 0,
+     "auto_collision": 0,
+     "other": 0,
+     "auto_comprehensive": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.89,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.87,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.87
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.2
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.08
+   }
+  },
+  "usage": {
+   "input_tokens": 861,
+   "output_tokens": 219,
+   "cost": 3.6162e-05
+  },
+  "id": "gen-dec-1790293491-bvUcdKox7jfqQjtlV1WS",
+  "provider": "TypeSafe"
+ },
+ "L-013": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 0,
+     "auto_comprehensive": 1,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.11,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.89,
+     "1": 0.11,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.89
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.88
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.23
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 858,
+   "output_tokens": 222,
+   "cost": 3.6036e-05
+  },
+  "id": "gen-dec-1790293491-KiGPN5knJ1UYZydx7pKm",
+  "provider": "TypeSafe"
+ },
+ "L-014": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "property_fire": 0,
+     "other": 0,
+     "liability": 0,
+     "auto_collision": 1,
+     "property_water": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.72,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.72,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.72
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 880,
+   "output_tokens": 219,
+   "cost": 3.696e-05
+  },
+  "id": "gen-dec-1790293491-po4ty1FB3T6KwePJu5j9",
+  "provider": "TypeSafe"
+ },
+ "L-015": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "other": 0,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "property_water": 1,
+     "liability": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.08,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.92,
+     "2": 0.08,
+     "3": 0
+    },
+    "confidence": 0.92
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 864,
+   "output_tokens": 219,
+   "cost": 3.6288e-05
+  },
+  "id": "gen-dec-1790293491-eAvKefiQnLoeeh7ITeZB",
+  "provider": "TypeSafe"
+ },
+ "L-016": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "other": 0,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_comprehensive": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.98,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.98
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.04
+   }
+  },
+  "usage": {
+   "input_tokens": 865,
+   "output_tokens": 222,
+   "cost": 3.633e-05
+  },
+  "id": "gen-dec-1790293491-ZIWyiYJOd04WFxFJ7jxs",
+  "provider": "TypeSafe"
+ },
+ "L-017": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "property_fire": 0,
+     "other": 0,
+     "auto_collision": 0.91,
+     "property_water": 0,
+     "auto_comprehensive": 0.09,
+     "liability": 0
+    },
+    "confidence": 0.88
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.9,
+     "2": 0.1,
+     "3": 0
+    },
+    "confidence": 0.9
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.76
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.04
+   }
+  },
+  "usage": {
+   "input_tokens": 878,
+   "output_tokens": 219,
+   "cost": 3.6876e-05
+  },
+  "id": "gen-dec-1790293491-M63HB7te8e4gZz6YPieO",
+  "provider": "TypeSafe"
+ },
+ "L-018": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_fire": 1,
+     "other": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 866,
+   "output_tokens": 219,
+   "cost": 3.6372e-05
+  },
+  "id": "gen-dec-1790293491-zMOPwRsT1rwUSx1BCrvx",
+  "provider": "TypeSafe"
+ },
+ "L-019": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "other": 0,
+     "property_fire": 0,
+     "property_water": 1,
+     "auto_collision": 0,
+     "liability": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 1,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 1
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 860,
+   "output_tokens": 219,
+   "cost": 3.612e-05
+  },
+  "id": "gen-dec-1790293491-2MRJ18Rsbxz0UUOw6UoK",
+  "provider": "TypeSafe"
+ },
+ "L-020": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "auto_comprehensive": 1,
+     "property_water": 0,
+     "other": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.99,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.22
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 868,
+   "output_tokens": 222,
+   "cost": 3.6456e-05
+  },
+  "id": "gen-dec-1790293491-3Zwc7qkDjbzGolDl0AmU",
+  "provider": "TypeSafe"
+ },
+ "L-021": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "liability": 0,
+     "other": 0,
+     "property_water": 0,
+     "property_fire": 0,
+     "auto_collision": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.99,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 871,
+   "output_tokens": 219,
+   "cost": 3.6582e-05
+  },
+  "id": "gen-dec-1790293491-WYbD3KKbRkfeQ4zppzkz",
+  "provider": "TypeSafe"
+ },
+ "L-022": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "other": 0,
+     "property_fire": 0,
+     "auto_comprehensive": 0,
+     "property_water": 1,
+     "auto_collision": 0,
+     "liability": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.13
+   }
+  },
+  "usage": {
+   "input_tokens": 858,
+   "output_tokens": 219,
+   "cost": 3.6036e-05
+  },
+  "id": "gen-dec-1790293491-fMYMiHyqp3EFGn8SzXlz",
+  "provider": "TypeSafe"
+ },
+ "L-023": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "other": 0,
+     "auto_collision": 1,
+     "property_fire": 0,
+     "liability": 0,
+     "auto_comprehensive": 0,
+     "property_water": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2.01,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 0.99,
+     "3": 0.01
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.02,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.99,
+     "1": 0.01,
+     "2": 0
+    },
+    "confidence": 0.97
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.24
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 873,
+   "output_tokens": 219,
+   "cost": 3.6666e-05
+  },
+  "id": "gen-dec-1790293491-iZ73z3ThyqDCrCAKgmaK",
+  "provider": "TypeSafe"
+ },
+ "L-024": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "liability": 0,
+     "property_fire": 1,
+     "other": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2.3,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.68,
+     "3": 0.31
+    },
+    "confidence": 0.68
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.01,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.99,
+     "1": 0.01,
+     "2": 0
+    },
+    "confidence": 0.99
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.2
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 864,
+   "output_tokens": 219,
+   "cost": 3.6288e-05
+  },
+  "id": "gen-dec-1790293491-n92bXV3UGulNZnlJitoa",
+  "provider": "TypeSafe"
+ },
+ "L-025": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "liability",
+    "probabilities": {
+     "property_water": 0,
+     "property_fire": 0,
+     "auto_comprehensive": 0,
+     "other": 0.01,
+     "auto_collision": 0,
+     "liability": 0.99
+    },
+    "confidence": 0.99
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.27,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.74,
+     "1": 0.25,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.73
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.89
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.15
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.23
+   }
+  },
+  "usage": {
+   "input_tokens": 864,
+   "output_tokens": 220,
+   "cost": 3.6288e-05
+  },
+  "id": "gen-dec-1790293491-T07AayQXDXjxwhZZKRDU",
+  "provider": "TypeSafe"
+ },
+ "L-026": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "liability",
+    "probabilities": {
+     "other": 0,
+     "liability": 0.99,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "property_water": 0,
+     "auto_comprehensive": 0.01
+    },
+    "confidence": 0.98
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.92,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.1,
+     "2": 0.88,
+     "3": 0.02
+    },
+    "confidence": 0.88
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.08,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.08,
+     "2": 0
+    },
+    "confidence": 0.88
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.85
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.21
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.23
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 866,
+   "output_tokens": 220,
+   "cost": 3.6372e-05
+  },
+  "id": "gen-dec-1790293491-bwtOVX89C7OGllAb6LtW",
+  "provider": "TypeSafe"
+ },
+ "L-027": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "property_fire": 0,
+     "liability": 0,
+     "other": 0,
+     "property_water": 1,
+     "auto_comprehensive": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2.26,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.02,
+     "2": 0.7,
+     "3": 0.28
+    },
+    "confidence": 0.7
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.07,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.93,
+     "1": 0.07,
+     "2": 0
+    },
+    "confidence": 0.89
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.2
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.22
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 864,
+   "output_tokens": 219,
+   "cost": 3.6288e-05
+  },
+  "id": "gen-dec-1790293491-LkNtwZZlF0sfpkX6VLOG",
+  "provider": "TypeSafe"
+ },
+ "L-028": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "auto_collision": 1,
+     "liability": 0,
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "property_fire": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.71,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.31,
+     "2": 0.68,
+     "3": 0.01
+    },
+    "confidence": 0.68
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.46,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.58,
+     "1": 0.38,
+     "2": 0.04
+    },
+    "confidence": 0.31
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.28
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 869,
+   "output_tokens": 219,
+   "cost": 3.6498e-05
+  },
+  "id": "gen-dec-1790293491-ghM6yx8qHBEfkdVzW9Ut",
+  "provider": "TypeSafe"
+ },
+ "L-029": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "liability",
+    "probabilities": {
+     "liability": 1,
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.75,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.71,
+     "2": 0.02,
+     "3": 0
+    },
+    "confidence": 0.7
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.04,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.96,
+     "1": 0.04,
+     "2": 0
+    },
+    "confidence": 0.94
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.92
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 866,
+   "output_tokens": 220,
+   "cost": 3.6372e-05
+  },
+  "id": "gen-dec-1790293491-8dW9RYgoqnf0nbZ7guXj",
+  "provider": "TypeSafe"
+ },
+ "L-030": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "property_water": 0,
+     "auto_comprehensive": 0.01,
+     "other": 0.04,
+     "property_fire": 0,
+     "liability": 0,
+     "auto_collision": 0.95
+    },
+    "confidence": 0.94
+   },
+   "severity": {
+    "type": "score",
+    "score": 2,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1,
+     "3": 0
+    },
+    "confidence": 1
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 876,
+   "output_tokens": 219,
+   "cost": 3.6792e-05
+  },
+  "id": "gen-dec-1790293491-YyEHs3cn5GvyWwPQyB7G",
+  "provider": "TypeSafe"
+ },
+ "L-031": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_fire": 1,
+     "other": 0,
+     "auto_comprehensive": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2.98,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 0.02,
+     "3": 0.98
+    },
+    "confidence": 0.98
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.21
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 868,
+   "output_tokens": 219,
+   "cost": 3.6456e-05
+  },
+  "id": "gen-dec-1790293491-htQg7fQaSCqpXj2COKle",
+  "provider": "TypeSafe"
+ },
+ "L-032": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0.98,
+     "auto_comprehensive": 0,
+     "auto_collision": 0,
+     "other": 0.02
+    },
+    "confidence": 0.97
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.37,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.63,
+     "2": 0.37,
+     "3": 0
+    },
+    "confidence": 0.62
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.2
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.08
+   }
+  },
+  "usage": {
+   "input_tokens": 860,
+   "output_tokens": 219,
+   "cost": 3.612e-05
+  },
+  "id": "gen-dec-1790293491-RuKoha8al9uQ7Z2Z3pec",
+  "provider": "TypeSafe"
+ },
+ "L-033": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "liability": 0,
+     "auto_comprehensive": 0,
+     "other": 0,
+     "property_fire": 0,
+     "auto_collision": 1,
+     "property_water": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.62,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.38,
+     "1": 0.62,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.62
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.01,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 0.99
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.29
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 856,
+   "output_tokens": 219,
+   "cost": 3.5952e-05
+  },
+  "id": "gen-dec-1790293492-LB26TIuQBHwWnYxgemBw",
+  "provider": "TypeSafe"
+ },
+ "L-034": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "property_water": 0,
+     "auto_collision": 0,
+     "liability": 0,
+     "other": 0.01,
+     "property_fire": 0,
+     "auto_comprehensive": 0.99
+    },
+    "confidence": 0.99
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.15,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.41,
+     "1": 0.03,
+     "2": 0.55,
+     "3": 0.01
+    },
+    "confidence": 0.14
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 851,
+   "output_tokens": 222,
+   "cost": 3.5742e-05
+  },
+  "id": "gen-dec-1790293492-haRCLdpaMo4K8oUZu95t",
+  "provider": "TypeSafe"
+ },
+ "L-035": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_collision": 0,
+     "property_fire": 0.99,
+     "other": 0.01
+    },
+    "confidence": 0.99
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.08,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.92,
+     "2": 0.08,
+     "3": 0
+    },
+    "confidence": 0.92
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 861,
+   "output_tokens": 219,
+   "cost": 3.6162e-05
+  },
+  "id": "gen-dec-1790293492-mZzQngMIZWhG1lwCKwWF",
+  "provider": "TypeSafe"
+ },
+ "L-036": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "auto_comprehensive": 1,
+     "other": 0,
+     "liability": 0,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "property_water": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.89,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.11,
+     "1": 0.89,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.89
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.17
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.23
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 845,
+   "output_tokens": 222,
+   "cost": 3.549e-05
+  },
+  "id": "gen-dec-1790293492-MsC2bTAV7ROWeJvweu6D",
+  "provider": "TypeSafe"
+ },
+ "L-037": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "liability": 0,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "property_water": 1,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.03,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.97,
+     "2": 0.03,
+     "3": 0
+    },
+    "confidence": 0.96
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.2
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 848,
+   "output_tokens": 219,
+   "cost": 3.5616e-05
+  },
+  "id": "gen-dec-1790293492-PXT5tH1UsxdEaMnGurlT",
+  "provider": "TypeSafe"
+ },
+ "L-038": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_comprehensive",
+    "probabilities": {
+     "liability": 0,
+     "auto_comprehensive": 1,
+     "other": 0,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "property_water": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.41,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.29,
+     "1": 0.03,
+     "2": 0.66,
+     "3": 0.02
+    },
+    "confidence": 0.36
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.72,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.31,
+     "1": 0.66,
+     "2": 0.03
+    },
+    "confidence": 0.5
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.61
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.86
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 877,
+   "output_tokens": 222,
+   "cost": 3.6834e-05
+  },
+  "id": "gen-dec-1790293492-GbFiVnatsE3tETFwrDdr",
+  "provider": "TypeSafe"
+ },
+ "L-039": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "other": 0.02,
+     "auto_collision": 0,
+     "property_fire": 0.98,
+     "liability": 0
+    },
+    "confidence": 0.97
+   },
+   "severity": {
+    "type": "score",
+    "score": 2,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 1.09,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.05,
+     "1": 0.81,
+     "2": 0.14
+    },
+    "confidence": 0.72
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.69
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.08
+   }
+  },
+  "usage": {
+   "input_tokens": 870,
+   "output_tokens": 219,
+   "cost": 3.654e-05
+  },
+  "id": "gen-dec-1790293492-fVSrUTPYhaGVGGXuwsfv",
+  "provider": "TypeSafe"
+ },
+ "L-040": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "liability": 0,
+     "auto_comprehensive": 0,
+     "property_water": 0,
+     "property_fire": 0,
+     "other": 0,
+     "auto_collision": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.04,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.96,
+     "1": 0.04,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.96
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.09,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.08,
+     "2": 0
+    },
+    "confidence": 0.87
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.31
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.73
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.97
+   }
+  },
+  "usage": {
+   "input_tokens": 881,
+   "output_tokens": 219,
+   "cost": 3.7002e-05
+  },
+  "id": "gen-dec-1790293492-wtlMYEXn1xyiGRoT1ZMa",
+  "provider": "TypeSafe"
+ },
+ "L-041": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_fire",
+    "probabilities": {
+     "property_fire": 1,
+     "liability": 0,
+     "other": 0,
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2.17,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 0.83,
+     "3": 0.17
+    },
+    "confidence": 0.82
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.45,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.58,
+     "1": 0.39,
+     "2": 0.03
+    },
+    "confidence": 0.33
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.94
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.8
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.13
+   }
+  },
+  "usage": {
+   "input_tokens": 880,
+   "output_tokens": 219,
+   "cost": 3.696e-05
+  },
+  "id": "gen-dec-1790293492-EfJhjW1CKCG1EQ6XkVXH",
+  "provider": "TypeSafe"
+ },
+ "L-042": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "property_water",
+    "probabilities": {
+     "liability": 0,
+     "property_water": 1,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "other": 0,
+     "auto_comprehensive": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.79,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.22,
+     "1": 0.77,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.77
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.73,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.27,
+     "1": 0.72,
+     "2": 0.01
+    },
+    "confidence": 0.58
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.83
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.62
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.93
+   }
+  },
+  "usage": {
+   "input_tokens": 879,
+   "output_tokens": 219,
+   "cost": 3.6918e-05
+  },
+  "id": "gen-dec-1790293492-R8L4NAM2w8GjMxVgAXAl",
+  "provider": "TypeSafe"
+ },
+ "L-043": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "other": 0,
+     "property_fire": 0,
+     "property_water": 0,
+     "auto_collision": 1,
+     "auto_comprehensive": 0,
+     "liability": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.53,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.48,
+     "1": 0.51,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.51
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 1.03,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.03,
+     "1": 0.91,
+     "2": 0.06
+    },
+    "confidence": 0.85
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.93
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.82
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.94
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.08
+   }
+  },
+  "usage": {
+   "input_tokens": 886,
+   "output_tokens": 219,
+   "cost": 3.7212e-05
+  },
+  "id": "gen-dec-1790293492-VYVvsYI6xis9YN8DmgXa",
+  "provider": "TypeSafe"
+ },
+ "L-044": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "auto_collision",
+    "probabilities": {
+     "other": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "property_water": 0,
+     "auto_comprehensive": 0,
+     "auto_collision": 1
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.08,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.92,
+     "1": 0.08,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.92
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.03,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.03,
+     "2": 0
+    },
+    "confidence": 0.96
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.92
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.51
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.55
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.96
+   }
+  },
+  "usage": {
+   "input_tokens": 880,
+   "output_tokens": 219,
+   "cost": 3.696e-05
+  },
+  "id": "gen-dec-1790293492-yxDKyXmIAZXmlqWHJMyf",
+  "provider": "TypeSafe"
+ },
+ "L-045": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "liability": 0,
+     "auto_comprehensive": 0,
+     "other": 1,
+     "property_fire": 0,
+     "property_water": 0,
+     "auto_collision": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.27,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.75,
+     "1": 0.24,
+     "2": 0.01,
+     "3": 0
+    },
+    "confidence": 0.73
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.86,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.14,
+     "1": 0.86,
+     "2": 0
+    },
+    "confidence": 0.8
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.27
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.79
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 864,
+   "output_tokens": 218,
+   "cost": 3.6288e-05
+  },
+  "id": "gen-dec-1790293492-lMU6MGXjHMWcdSCqyOiF",
+  "provider": "TypeSafe"
+ },
+ "L-046": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "property_fire": 0,
+     "liability": 0,
+     "auto_collision": 0,
+     "auto_comprehensive": 0,
+     "property_water": 0.13,
+     "other": 0.87
+    },
+    "confidence": 0.84
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.26,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.72,
+     "2": 0.27,
+     "3": 0
+    },
+    "confidence": 0.71
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.81
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.09
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.06
+   }
+  },
+  "usage": {
+   "input_tokens": 853,
+   "output_tokens": 218,
+   "cost": 3.5826e-05
+  },
+  "id": "gen-dec-1790293492-tdxKpsCkbOHicPzaI8hr",
+  "provider": "TypeSafe"
+ },
+ "L-047": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "property_water": 0,
+     "other": 1,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "auto_comprehensive": 0
+    },
+    "confidence": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.13,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.88,
+     "1": 0.12,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.87
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.4
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.62
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.07
+   }
+  },
+  "usage": {
+   "input_tokens": 860,
+   "output_tokens": 218,
+   "cost": 3.612e-05
+  },
+  "id": "gen-dec-1790293492-mEFq4EDNm16DJvPxD1Yq",
+  "provider": "TypeSafe"
+ },
+ "L-048": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "auto_comprehensive": 0,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "liability": 0,
+     "other": 1,
+     "property_water": 0
+    },
+    "confidence": 0.99
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.01,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.99
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.06,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.94,
+     "1": 0.06,
+     "2": 0
+    },
+    "confidence": 0.91
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.4
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.13
+   }
+  },
+  "usage": {
+   "input_tokens": 855,
+   "output_tokens": 218,
+   "cost": 3.591e-05
+  },
+  "id": "gen-dec-1790293492-nAOFOimqmMzOQ26Qcjvv",
+  "provider": "TypeSafe"
+ },
+ "L-049": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "other": 0.98,
+     "liability": 0.02,
+     "property_fire": 0,
+     "auto_collision": 0,
+     "auto_comprehensive": 0,
+     "property_water": 0
+    },
+    "confidence": 0.97
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.43,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.58,
+     "1": 0.42,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.57
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0.16,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 0.84,
+     "1": 0.16,
+     "2": 0
+    },
+    "confidence": 0.76
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.03
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.23
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.06
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.14
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.48
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.11
+   }
+  },
+  "usage": {
+   "input_tokens": 860,
+   "output_tokens": 218,
+   "cost": 3.612e-05
+  },
+  "id": "gen-dec-1790293492-2iNdmf2I4nvDQGAyfaLl",
+  "provider": "TypeSafe"
+ },
+ "L-050": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "claim_type": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "other": 0.97,
+     "auto_comprehensive": 0,
+     "auto_collision": 0,
+     "property_fire": 0,
+     "property_water": 0,
+     "liability": 0.03
+    },
+    "confidence": 0.96
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.26,
+    "legend": {
+     "0": "Minor: cosmetic damage, everything still usable",
+     "1": "Moderate: repairable damage, temporarily unusable",
+     "2": "Major: extensive damage, likely total loss of the vehicle or room",
+     "3": "Catastrophic: home uninhabitable or multiple vehicles/structures destroyed"
+    },
+    "probabilities": {
+     "0": 0.75,
+     "1": 0.25,
+     "2": 0,
+     "3": 0
+    },
+    "confidence": 0.74
+   },
+   "claimant_distress": {
+    "type": "score",
+    "score": 0,
+    "legend": {
+     "0": "Calm and matter-of-fact",
+     "1": "Worried or anxious",
+     "2": "Highly distressed or panicking"
+    },
+    "probabilities": {
+     "0": 1,
+     "1": 0,
+     "2": 0
+    },
+    "confidence": 0.99
+   },
+   "injury_reported": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "coverage_match": {
+    "type": "noul",
+    "noul": 0.11
+   },
+   "fraud_inconsistent_story": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "fraud_payment_pressure": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "fraud_vague_details": {
+    "type": "noul",
+    "noul": 0.46
+   },
+   "fraud_preexisting_damage": {
+    "type": "noul",
+    "noul": 0.1
+   }
+  },
+  "usage": {
+   "input_tokens": 853,
+   "output_tokens": 218,
+   "cost": 3.5826e-05
+  },
+  "id": "gen-dec-1790293492-Sjan8sguWALN49KekIca",
+  "provider": "TypeSafe"
+ },
+ "L-045#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "not_enough_information",
+    "probabilities": {
+     "identity_theft": 0,
+     "tenant_damage": 0,
+     "not_enough_information": 0.99,
+     "personal_property": 0.01,
+     "workmanship_dispute": 0
+    },
+    "confidence": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 507,
+   "output_tokens": 68,
+   "cost": 2.1294e-05
+  },
+  "id": "gen-dec-1790293779-IQwYhVFMmzSR1E77oiDL",
+  "provider": "TypeSafe"
+ },
+ "L-046#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "personal_property",
+    "probabilities": {
+     "tenant_damage": 0,
+     "workmanship_dispute": 0,
+     "not_enough_information": 0,
+     "identity_theft": 0,
+     "personal_property": 1
+    },
+    "confidence": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 496,
+   "output_tokens": 66,
+   "cost": 2.0832e-05
+  },
+  "id": "gen-dec-1790293779-jOIeS5ZtGsFQqcoNDFKP",
+  "provider": "TypeSafe"
+ },
+ "L-047#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "not_enough_information",
+    "probabilities": {
+     "identity_theft": 0,
+     "personal_property": 0,
+     "workmanship_dispute": 0,
+     "not_enough_information": 1,
+     "tenant_damage": 0
+    },
+    "confidence": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 503,
+   "output_tokens": 68,
+   "cost": 2.1126e-05
+  },
+  "id": "gen-dec-1790293779-NOOFhP5I7Jz1BBeJk7Y8",
+  "provider": "TypeSafe"
+ },
+ "L-048#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "identity_theft",
+    "probabilities": {
+     "identity_theft": 1,
+     "not_enough_information": 0,
+     "tenant_damage": 0,
+     "workmanship_dispute": 0,
+     "personal_property": 0
+    },
+    "confidence": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 498,
+   "output_tokens": 67,
+   "cost": 2.0916e-05
+  },
+  "id": "gen-dec-1790293779-8VEqXFQy86tyiofmHRdt",
+  "provider": "TypeSafe"
+ },
+ "L-049#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "workmanship_dispute",
+    "probabilities": {
+     "not_enough_information": 0,
+     "identity_theft": 0,
+     "tenant_damage": 0,
+     "workmanship_dispute": 1,
+     "personal_property": 0
+    },
+    "confidence": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 503,
+   "output_tokens": 69,
+   "cost": 2.1126e-05
+  },
+  "id": "gen-dec-1790293779-kTNnnX5q3gLahUfhUXIs",
+  "provider": "TypeSafe"
+ },
+ "L-050#other": {
+  "model": "typesafe/jev-1.13-20260917",
+  "answers": {
+   "other_subtype": {
+    "type": "choice",
+    "choice": "tenant_damage",
+    "probabilities": {
+     "tenant_damage": 0.99,
+     "identity_theft": 0,
+     "not_enough_information": 0.01,
+     "workmanship_dispute": 0,
+     "personal_property": 0
+    },
+    "confidence": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 496,
+   "output_tokens": 66,
+   "cost": 2.0832e-05
+  },
+  "id": "gen-dec-1790293779-dxA4OwXEJCjYmp4lbloQ",
+  "provider": "TypeSafe"
+ }
+}

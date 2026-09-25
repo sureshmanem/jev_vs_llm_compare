@@ -1,5 +1,5 @@
-from jev_compare.applicants import APPLICANTS
-from jev_compare.policy import APPROVE, DENY, REVIEW, Factors, decide
+from jev_compare.tasks.loan.applicants import APPLICANTS
+from jev_compare.tasks.loan.policy import APPROVE, DENY, REVIEW, Factors, decide
 
 
 def test_high_credit_risk_always_denies():
