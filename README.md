@@ -3,7 +3,7 @@
 A small, honest side-by-side demo of two ways to make the **same structured decision**
 from the **same messy natural-language input**:
 
-- **LLM engine** — OpenAI chat model asked to read an applicant's free-text summary and
+- **LLM engine** — Claude Opus 5 (via [OpenRouter](https://openrouter.ai)) asked to read an applicant's free-text summary and
   return a verdict (`approve` / `review` / `deny`) with a reason. Flexible, but the output
   is prose you must parse, it's uncalibrated, and it drifts on borderline cases.
 - **Jev engine** — [Jev](https://www.langchain.com/blog/building-a-harness-with-jev) (TypeSafe AI's
@@ -15,7 +15,7 @@ Both engines are traced in **LangSmith** so you can inspect every call.
 
 ## The point
 
-| | OpenAI LLM | Jev System One |
+| | Claude Opus 5 (OpenRouter) | Jev System One |
 |---|---|---|
 | Output | prose to parse | typed values + probabilities |
 | Directly usable by software | needs coercion | yes |
@@ -43,7 +43,7 @@ the same policy.
 flowchart TD
     A["Applicant summary<br/>(free text: income, job history, credit)"] --> B{"Which engine?"}
 
-    B -->|LLM path| L1["OpenAI LLM<br/>reads text + is given the policy"]
+    B -->|LLM path| L1["Claude Opus 5 via OpenRouter<br/>reads text + is given the policy"]
     L1 --> L2["Model writes a verdict<br/>as prose / JSON"]
     L2 --> L3["Parse & validate the text<br/>into approve / review / deny"]
     L3 --> D["Decision<br/>approve / review / deny + reason"]
@@ -97,12 +97,12 @@ flowchart LR
     end
 
     subgraph Engines
-        LE["llm_engine.py<br/>@traceable"]
-        JE["jev_engine.py<br/>@traceable"]
+        LE["engines/llm.py<br/>@traceable"]
+        JE["engines/jev.py<br/>@traceable"]
     end
 
     subgraph External["External services"]
-        OA["OpenAI API<br/>chat.completions"]
+        OA["OpenRouter API<br/>anthropic/claude-opus-5"]
         JV["TypeSafe / Jev API<br/>TypeSafeClassifier"]
         LS["LangSmith<br/>trace collector"]
     end
@@ -131,16 +131,17 @@ flowchart LR
 - **`applicants.py`** — 8 hand-labeled cases. Ground-truth labels are computed from
   `policy.decide`, so they can never contradict the rules. Borderline cases carry a flag that
   tells the harness to repeat them.
-- **`llm_engine.py`** — builds a system prompt from `POLICY_TEXT`, calls OpenAI at
+- **`engines/llm.py`** — builds a system prompt from `POLICY_TEXT`, calls Claude Opus 5 through
+  OpenRouter's OpenAI-compatible API at
   `temperature=0`, forces `response_format=json_object`, then **parses and validates** the
   prose into a decision (the "coercion tax"). Wrapped in `@traceable` → LangSmith.
-- **`jev_engine.py`** — sends the applicant text as Jev's `state` plus four typed `noul`
+- **`engines/jev.py`** — sends the applicant text as Jev's `state` plus four typed `noul`
   questions, reads back calibrated probabilities, thresholds them into `Factors`, and calls
   `policy.decide`. Wrapped in `@traceable` → LangSmith.
 - **`compare.py`** — orchestrates: runs each applicant down both engines (borderline cases
   `N=5` times), catches per-call errors so one bad key doesn't abort the run, and scores
   **accuracy, flip-rate, mean latency, and cross-engine agreement**.
-- **LangSmith** — receives a trace from every engine call (both paths), so each OpenAI and
+- **LangSmith** — receives a trace from every engine call (both paths), so each Opus and
   Jev invocation is inspectable after the run.
 
 **Data contracts between the pieces:**
@@ -148,24 +149,39 @@ flowchart LR
 | Boundary | Sent | Returned |
 |---|---|---|
 | harness → engine | `applicant.text` (str) | `EngineResult(decision, reason, latency_ms, detail)` |
-| llm_engine → OpenAI | system(policy) + user(text) | JSON `{decision, reason}` |
-| jev_engine → Jev | `state` + typed `noul` questions | probability per question (0.0–1.0) |
+| engines/llm → OpenRouter | system(policy) + user(text) | JSON `{decision, reason}` |
+| engines/jev → Jev | `state` + typed `noul` questions | probability per question (0.0–1.0) |
 | engine → LangSmith | run inputs/outputs/timing | trace id (async, non-blocking) |
 
 ## Layout
 
 ```
-applicants.py   # hand-labeled test cases (clear approve/deny + borderline)
-policy.py       # the eligibility rules (shared ground truth + Jev decision policy)
-llm_engine.py   # OpenAI verdict, LangSmith-traced
-jev_engine.py   # Jev typed questions + policy, LangSmith-traced
-compare.py      # runs both, repeats borderline cases, scores accuracy/determinism/latency
+src/jev_compare/
+  policy.py        # the eligibility rules (shared ground truth + Jev decision policy)
+  applicants.py    # hand-labeled test cases (clear approve/deny + borderline)
+  config.py        # .env loading + shared EngineResult type
+  engines/
+    llm.py         # Claude Opus 5 via OpenRouter, LangSmith-traced
+    jev.py         # Jev typed questions + policy, LangSmith-traced
+  compare.py       # runs engines, repeats borderline cases, scores accuracy/determinism/latency
+  __main__.py      # `python -m jev_compare`
+tests/             # offline tests (policy rules, LLM output parsing)
 ```
 
 ## Run
 
 ```bash
-pip install -r requirements.txt
-cp .env.example .env   # then fill in the keys
-python compare.py
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt        # installs the package in editable mode + pytest
+cp .env.example .env                   # then fill in OPENROUTER_API_KEY (and TYPESAFE_API_KEY)
+
+pytest                                  # offline tests, no keys needed
+jev-compare                             # both engines (same as: python -m jev_compare)
+jev-compare --engines LLM --repeats 3   # only Claude Opus 5 via OpenRouter
 ```
+
+Set `OPENROUTER_MODEL` to compare any other OpenRouter model (e.g. `openai/gpt-4o-mini`).
+
+**Jev is not on OpenRouter.** It is served by TypeSafe AI and needs their
+`langchain-typesafe` SDK (not on PyPI) plus `TYPESAFE_API_KEY`. Without them, the Jev column
+reports errors and `--engines LLM` runs the LLM side alone.

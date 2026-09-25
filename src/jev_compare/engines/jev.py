@@ -20,8 +20,8 @@ import time
 
 from langsmith import traceable
 
-from common import EngineResult
-from policy import Factors, decide
+from jev_compare.config import EngineResult, require_env
+from jev_compare.policy import Factors, decide
 
 # Probability at/above which a noul is treated as "true".
 THRESHOLD = 0.5
@@ -29,7 +29,14 @@ THRESHOLD = 0.5
 
 def _classifier():
     # Imported lazily so the module loads even before the dep is installed.
-    from langchain_typesafe import TypeSafeClassifier  # noqa: WPS433
+    try:
+        from langchain_typesafe import TypeSafeClassifier  # noqa: WPS433
+    except ImportError as exc:
+        raise RuntimeError(
+            "langchain-typesafe is not installed. Jev is served by TypeSafe AI "
+            "(not OpenRouter); install their SDK to run this engine."
+        ) from exc
+    require_env("TYPESAFE_API_KEY")
     return TypeSafeClassifier()  # reads TYPESAFE_API_KEY from env
 
 

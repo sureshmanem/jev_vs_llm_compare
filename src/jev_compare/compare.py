@@ -17,12 +17,12 @@ import statistics
 from collections import defaultdict
 from dataclasses import dataclass
 
-from applicants import APPLICANTS, Applicant
-from common import EngineResult
-import llm_engine
-import jev_engine
+from jev_compare.applicants import APPLICANTS, Applicant
+from jev_compare.config import EngineResult
+from jev_compare.engines import jev, llm
 
 REPEATS = 5  # runs per borderline applicant
+ENGINES = {"LLM": llm.evaluate, "Jev": jev.evaluate}
 
 
 @dataclass
@@ -45,12 +45,13 @@ def _run_engine(name: str, fn, app: Applicant, runs: int) -> list[Run]:
     return out
 
 
-def run_all(repeats: int = REPEATS) -> list[Run]:
+def run_all(repeats: int = REPEATS, engines: list[str] | None = None) -> list[Run]:
+    engines = engines or list(ENGINES)
     runs: list[Run] = []
     for app in APPLICANTS:
         n = repeats if app.borderline else 1
-        runs += _run_engine("LLM", llm_engine.evaluate, app, n)
-        runs += _run_engine("Jev", jev_engine.evaluate, app, n)
+        for name in engines:
+            runs += _run_engine(name, ENGINES[name], app, n)
     return runs
 
 
@@ -92,16 +93,23 @@ def summarize(runs: list[Run]) -> None:
     print("SUMMARY")
     print("=" * 78)
     by = _by_engine(runs)
-    for name in ("LLM", "Jev"):
+    for name in ENGINES:
         rs = by[name]
+        if not rs:
+            continue
         acc = sum(r.correct for r in rs) / len(rs) if rs else 0.0
-        lat = statistics.mean([r.result.latency_ms for r in rs if r.result.latency_ms]) \
-            if rs else 0.0
+        lats = [r.result.latency_ms for r in rs if r.result.latency_ms]
+        lat = statistics.mean(lats) if lats else 0.0
         flips = _flip_rate(rs)
         print(f"{name:<5} accuracy={acc:6.1%}   flip_rate={flips:6.1%}   "
               f"mean_latency={lat:8.1f} ms   n={len(rs)}")
 
-    print(f"\nagreement between engines = {_agreement(runs):.1%}")
+    if all(by[name] for name in ENGINES):
+        print(f"\nagreement between engines = {_agreement(runs):.1%}")
+    errors = [r for r in runs if r.result.decision == "error"]
+    if errors:
+        print(f"\n{len(errors)} call(s) errored; first: [{errors[0].engine}] "
+              f"{errors[0].result.reason}")
     print("=" * 78)
 
 
@@ -129,6 +137,8 @@ def _agreement(runs: list[Run]) -> float:
     for app in APPLICANTS:
         llm = majority([r for r in runs if r.applicant.id == app.id and r.engine == "LLM"])
         jev = majority([r for r in runs if r.applicant.id == app.id and r.engine == "Jev"])
+        if "error" in (llm, jev):
+            continue  # an errored call says nothing about agreement
         total += 1
         agree += int(llm == jev)
     return agree / total if total else 0.0
@@ -138,11 +148,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Compare LLM vs Jev on loan eligibility.")
     parser.add_argument("--repeats", type=int, default=REPEATS,
                         help="runs per borderline applicant (default 5)")
+    parser.add_argument("--engines", nargs="+", choices=list(ENGINES), default=list(ENGINES),
+                        help="which engines to run (default: both)")
     args = parser.parse_args()
 
-    print(f"Running LLM vs Jev over {len(APPLICANTS)} applicants "
+    print(f"Running {' vs '.join(args.engines)} over {len(APPLICANTS)} applicants "
           f"(borderline cases x{args.repeats})...")
-    runs = run_all(args.repeats)
+    runs = run_all(args.repeats, args.engines)
     summarize(runs)
 
 

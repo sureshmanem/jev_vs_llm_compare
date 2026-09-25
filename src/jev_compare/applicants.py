@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from policy import Factors, decide, Decision
+from jev_compare.policy import Factors, decide, Decision
 
 
 @dataclass
